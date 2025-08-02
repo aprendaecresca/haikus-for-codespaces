@@ -1,0 +1,17 @@
+```mermaid
+flowchart TD
+    subgraph Início
+      A[Verificar pré-requisitos]
+    end
+    A --> B[Gerar Pixel ID & Access Token]
+    B --> C[Criar GTM Server Container]
+    C --> D[Deploy no Google Cloud]
+    D --> E[Configurar domínio customizado + SSL]
+    E --> F[Configurar GTM Web Container]
+    F --> G[Implementar Data Layer + GA4 Web Tag]
+    G --> H[Criar GA4 Client no Server Container]
+    H --> I[Configurar Meta CAPI Tag no Server Container]
+    I --> J[Testar eventos no Events Manager]
+    J --> K[Publicar containers e monitorar]
+    K --> L[Sucesso 🎉]
+```
